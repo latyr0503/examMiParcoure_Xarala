@@ -1,13 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/* variable de couleur */
 :root {
   --background_gris: #f5f5f5;
   --color_blue: #024089;
 }
-
+/* police pour tout le corps du site */
+body {
+  font-family: "Gotu", sans-serif;
+}
+/* style de mon barre de navigation */
 header {
   display: flex;
   justify-content: space-between;
@@ -31,6 +37,8 @@ header nav ul li a {
   color: #2f2f2f;
   padding: 0 20px;
 }
+
+/* style section name */
 .section_name {
   display: flex;
   justify-content: space-between;
@@ -56,7 +64,7 @@ header nav ul li a {
   color: var(--color_blue);
   border: 2px solid var(--color_blue);
 }
-
+/* style section about */
 #section_about {
   display: flex;
   justify-content: space-between;
@@ -95,6 +103,7 @@ header nav ul li a {
   display: flex;
   justify-content: center;
 }
+/* style section_portfolio  */
 #section_portfolio,
 #section_services,
 #section_experiences {
@@ -156,7 +165,7 @@ header nav ul li a {
 .section_portfolio_div2 .image {
   margin-bottom: 40px;
 }
-
+/* style section_services */
 #section_services {
   background-color: #f6fbff;
 }
@@ -186,7 +195,7 @@ header nav ul li a {
 .section_services_div1 .grid-item div h3 {
   color: var(--color_blue);
 }
-
+/* style section_experiences */
 .section_experiences_div1 {
   margin: 50px;
   display: grid;
@@ -272,5 +281,5 @@ footer ul li img {
   width: 30px;
 }
 footer ul li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
