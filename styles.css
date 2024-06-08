@@ -10,6 +10,9 @@
   --color_blue: #024089;
 }
 /* police pour tout le corps du site */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Gotu", sans-serif;
 }
@@ -28,9 +31,11 @@ header img {
   width: 65px;
   height: auto;
 }
-header nav ul {
-  display: flex;
+header nav ul,
+footer ul {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 header nav ul li a {
   text-decoration: none;
@@ -213,7 +218,8 @@ header nav ul li a {
   padding: 100px;
   background-color: var(--background_gris);
 }
-#section_contact div img {
+#section_contact div img,
+footer ul li img {
   width: 30px;
   margin-right: 10px;
 }
@@ -272,14 +278,12 @@ footer {
   padding: 10px 100px;
   align-items: center;
 }
-footer ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-footer ul li img {
-  width: 30px;
-}
 footer ul li {
   margin: 0 10px;
+}
+
+
+/* pour les buttons */
+button{
+    cursor: pointer;
 }
